@@ -6,6 +6,7 @@ let username = document.getElementById('username');
 let btn = document.getElementById('send');
 let output = document.getElementById('output');
 
+// token y variables de la guia
 var token = "c22d2cf03e5b458762478400b59c72cc2c4e07817776bf6bbc5050cdcdcdba84";
 var settings = {
     "url": "https://api.envia.com/ship/generate/",
@@ -88,6 +89,7 @@ var settings = {
 
 btn.addEventListener('click', function () {
 
+    // peticion para generear guia
     $.ajax(settings).done(function (response) {
         console.log(response);
     });
